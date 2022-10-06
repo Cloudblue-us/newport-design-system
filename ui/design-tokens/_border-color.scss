@@ -1,8 +1,8 @@
 $color-border-primary: $palette-gray-5 !default;
-$color-border-brand-primary: $azure !default;
-$color-border-brand-primary-hover: $science-blue !default;
-$color-border-brand-primary-focus: $science-blue !default;
-$color-border-brand-primary-active: $midnight-blue !default;
+$color-border-brand-primary: #60A62B !default;
+$color-border-brand-primary-hover: #60A62B !default;
+$color-border-brand-primary-focus: #60A62B !default;
+$color-border-brand-primary-active: #518C24 !default;
 // Default border color for UI elements.
 $color-border: $palette-gray-5 !default;
 // Our product brand blue.
@@ -80,7 +80,8 @@ $color-border-input: $newport-border-gray !default;
 // Border color on active form elements.
 $color-border-input-active: $newport-color-brand-orange !default;
 // Border color on disabled form elements.
-$color-border-input-disabled: $palette-gray-6 !default;
+/*$color-border-input-disabled: $palette-gray-6 !default;*/
+$color-border-input-disabled: #707070 !default;
 // The borders to create the checkmark
 $color-border-input-checkbox-selected-checkmark: $white !default;
 // These borders create the faux checkmark when the checkbox toggle is in the checked state.

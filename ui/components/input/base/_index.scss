@@ -14,7 +14,7 @@
   @include form-states;
   box-shadow: none;
   display: inline-block;
-  padding: 0;
+  padding: 0 .5rem;
   line-height: $height-input;
   min-height: calc(#{$height-input} + (#{$border-width-thin} * 2)); // For IE
   /**
@@ -26,7 +26,7 @@
     background-color: transparent;
     font-size: $input-static-font-size;
     font-weight: $input-readonly-font-weight; // This is a plain readonly input. It should not have the text treatment that static has.
-    border-bottom: 1px solid $color-border-input;
+    /*border-bottom: 1px solid $color-border-input;*/
   }
 
   &[type="search"]:-ms-clear {
@@ -130,6 +130,7 @@
     top: 50%;
     margin-top: (($square-icon-medium-content * 0.5) * -1);
     line-height: 1;
+    margin-left: .5rem;
 
     /* @Todo - we need to be sure this is deprecated since the color sems to be the correct gray I see in specs */
     @include deprecate('4.0.0', 'Use .nds-icon-text-default on the SVG icon instead') {
@@ -149,7 +150,7 @@
     .nds-input,
     .nds-input_bare,
     .nds-input--bare {
-      padding-#{$left}: $spacing-large;
+      padding-#{$left}: $spacing-large + .5rem;
     }
   }
 
@@ -163,7 +164,7 @@
   &--right {
 
     .nds-input__icon {
-      #{$right}: 0;
+      #{$right}: .5rem;
     }
 
     .nds-input,
@@ -189,7 +190,7 @@
      */
     .nds-input__icon_left,
     .nds-input__icon--left {
-      #{$left}: 0;
+      #{$left}: .5rem!important;
     }
 
     /**
@@ -200,7 +201,7 @@
      */
     .nds-input__icon_right,
     .nds-input__icon--right {
-      #{$right}: 0;
+      #{$right}: .5rem;
     }
 
     .nds-input,

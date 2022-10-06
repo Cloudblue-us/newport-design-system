@@ -13,10 +13,9 @@
 .nds-textarea {
   @include form-states;
   resize: vertical;
-  border: 0;
-  border-bottom: 1px solid $color-border-input;
-  padding: $spacing-x-small 0;
-  border-radius: 0;
+  border: 1px solid $color-border-input;
+  padding: .5rem;
+  border-radius: 8px;
 
   &:active,
   &:focus {

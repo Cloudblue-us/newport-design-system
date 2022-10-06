@@ -18,13 +18,15 @@
 .nds-popover--tooltip {
   width: auto;
   max-width: $size-medium;
-  background: $color-background-alt-inverse;
+  background: #8BC6C4;
+  /*background: $color-background-alt-inverse;*/
   border: 0;
 
   .nds-popover__body {
     font-size: $font-size-small;
     font-weight: $font-weight-light;
-    color: $color-text-inverse;
+    /*color: $color-text-inverse;*/
+    color: #333333;
   }
 }
 

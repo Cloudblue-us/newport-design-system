@@ -49,15 +49,16 @@
   flex: 1 1 auto;
 }
 
+[role="combobox"],
 [role="combobox"] input[readonly] {
-  padding-#{$left}: $spacing-small;
-  border-color: $color-border-input;
-  background-color: $color-background-input;
-  font-size: inherit;
-  font-weight: $font-weight-regular;
+  padding-#{$left}: $spacing-small !important;
+  border-color: $color-border-input !important;
+  background-color: $color-background-input !important;
+  font-size: inherit !important;
+  font-weight: $font-weight-regular !important;
 
   &:focus {
-    border-color: $color-border-input-active;
+    border-color: $color-border-input-active !important;
   }
 }
 
@@ -340,7 +341,7 @@
   .nds-combobox__input {
     min-height: $height-pill;
     line-height: $height-pill;
-    border: 0;
+    /*border: 0;*/
     padding-top: $spacing-xxx-small;
     padding-bottom: $spacing-xxx-small;
 

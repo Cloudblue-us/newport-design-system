@@ -100,7 +100,8 @@
  */
 .nds-progress-bar__value {
   display: block;
-  background: $progress-bar-color-background-fill;
+  /*background: $progress-bar-color-background-fill;*/
+  background: #01827D;
   height: 100%;
 }
 

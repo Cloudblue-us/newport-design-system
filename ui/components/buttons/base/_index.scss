@@ -46,7 +46,8 @@
   border-radius: $button-border-radius;
   line-height: $line-height-button;
   text-decoration: none;
-  color: $color-text-link;
+  /*color: $color-text-link;*/
+  color: #333;
   // stylelint-disable property-no-vendor-prefix
   -webkit-appearance: none;
   // stylelint-enable property-no-vendor-prefix
@@ -62,7 +63,8 @@
 
   &:hover,
   &:focus {
-    color: $color-text-link-hover;
+    /*color: $color-text-link-hover;*/
+    color: #6FBF31;
   }
 
   &:focus {
@@ -171,6 +173,10 @@ a.nds-button--inverse:focus {
   &:focus {
     box-shadow: $shadow-inner, $shadow-outer;
   }
+
+  svg.nds-button__icon {
+    fill: #fff;
+  }
 }
 
 /**
@@ -236,6 +242,10 @@ a.nds-button--inverse:focus {
     background: $color-background-button-brand-disabled;
     border-color: $color-border-button-brand-disabled;
     color: $color-text-button-brand-disabled;
+  }
+
+  svg.nds-button__icon {
+    fill: #fff;
   }
 }
 
@@ -363,7 +373,7 @@ a.nds-button--inverse:focus {
 }
 
 svg.nds-button__icon {
-  fill: $color-input-font-kashmiri-blue;
+  fill: #333;
 }
 
 /**

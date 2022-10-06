@@ -70,7 +70,8 @@
   .nds-block_container>label~.nds-block_body {
     padding-top: 1.5rem;
     padding-#{$left}: 1.5625rem;
-    color: $color-midnight-blue;
+    /*color: $color-midnight-blue;*/
+    color: #01827D;
   }
 
   div[vlc-slds-toggle-elem='visible'],
@@ -170,7 +171,8 @@ label[vlc-slds-toggle],
   .nds-form-element__label_toggle-text {
     flex-grow: 1;
     padding-#{$left}: 10px; // this will add up 30px + 10
-    color: $color-background-brand-primary;
+    /*color: $color-background-brand-primary;*/
+    color: #01827D;
     font-weight: 400;
     font-size: 1rem;
   }

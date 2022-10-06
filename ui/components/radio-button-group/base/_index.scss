@@ -14,7 +14,7 @@
 .nds-radio--button-group {
   display: inline-flex;
   border: $border-width-thin solid $color-border;
-  border-radius: $border-radius-medium;
+  border-radius: 8px;
   width: 100%;
 }
 
@@ -44,7 +44,8 @@
     padding-#{$right}: $spacing-medium;
     text-align: center;
     vertical-align: middle;
-    color: $color-input-icon-blue-hue;
+    /*color: $color-input-icon-blue-hue;*/
+    /*color: #333;*/
     font-size: 0.85rem;
     font-weight: 300;
 
@@ -68,7 +69,7 @@
   &:first-child > .nds-radio_button__label,
   &:first-child > .nds-radio--button__label,
   &:first-child > .nds-radio_button__label .nds-radio-overlay {
-    border-radius: corner-values($border-radius-medium 0 0 $border-radius-medium);
+    border-radius: corner-values(8px 0 0 8px);
   }
 
   // The middle selector doesn't seem to be applied anywhere? I didn't find a .button--last anywhere?
@@ -79,7 +80,7 @@
   &:last-child > .nds-radio_button__label,
   &:last-child > .nds-radio--button__label,
   &:last-child > .nds-radio_button__label .nds-radio-overlay {
-    border-radius: corner-values(0 $border-radius-medium $border-radius-medium 0);
+    border-radius: corner-values(0 8px 8px 0);
   }
 
   // Hide input and style radio--faux
@@ -99,14 +100,18 @@
     &:checked ~ .nds-radio_faux,
     &:checked ~ .nds-radio--faux,
     &:checked + .nds-radio_button__label,
-    &:checked + .nds-radio--button__label {
-      background-color: $button-color-background-primary;
-      color: $color-input-icon-blue-hue;
+    &:checked + .nds-radio_button__label .nds-radio--faux,
+    &:checked + .nds-radio--button__label,
+    &:checked + .nds-radio--button__label .nds-radio--faux {
+      /*background-color: $button-color-background-primary;*/
+      background-color: $color-border-input-active;
+      /*color: $color-input-icon-blue-hue;*/
+      color: #fff !important;
 
       // Need something stronger when the input is checked
       &:hover,
       &:focus {
-        background-color: transparent;
+        background-color: $color-border-input-active;
       }
     }
 
@@ -119,7 +124,7 @@
       bottom: -0.125rem;
       display: block;
       z-index: ($z-index-default + 1);
-      border-radius: 0.25rem;
+      border-radius: 8px;
     }
 
     // Focus State

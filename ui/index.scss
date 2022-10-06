@@ -12,6 +12,11 @@
 @import 'init';
 @import url(./nds-fonts.css);
 
+// Resets (unscoped)
+// @include root('.via-nds', '.via-nds');
+
+// #{$reset-wrapping-class} {
+// }
 // Resets
 @import 'vendor/normalize';
 @include core($scoped: false, $globals: true);

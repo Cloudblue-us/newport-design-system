@@ -25,14 +25,15 @@
     span {
       font-size: 0.875rem;
       letter-spacing: 1px;
-      font-weight: 400;
-      color: $color-input-font-kashmiri-blue;
+      font-weight: 300;
+      color: #333333;
     }
   }
 }
 
 .nds-form-element__label svg.nds-icon {
-  fill: $color-input-icon-blue-hue;
+  /*fill: $color-input-icon-blue-hue;*/
+  fill: $color-text-icon-default;
 }
 
 .leaflet-container {

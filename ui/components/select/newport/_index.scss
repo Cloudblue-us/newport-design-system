@@ -6,6 +6,7 @@
   letter-spacing: 1px;
   font-weight: 400;
   color: inherit;
+  padding: 0 .5rem;
 
   &_container {
     width: 100%;
@@ -13,7 +14,8 @@
 }
 
 .nds-form-element__control.nds-input-has-icon svg.nds-icon {
-  fill: $color-input-icon-blue-hue;
+  /*fill: $color-input-icon-blue-hue;*/
+  fill: #939393;
 }
 
 .nds-select-wrapper .nds-control-action__container {

@@ -17,13 +17,14 @@
 }
 
 .nds-form-element__label {
-  color: $color-input-font-kashmiri-blue;
+  /*color: $color-input-font-kashmiri-blue;*/
+  color: #333;
 }
 
 .nds-input {
   font-size: .875rem;
   letter-spacing: 1px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 input[placeholder]::placeholder {
@@ -33,6 +34,7 @@ input[placeholder]::placeholder {
   font-weight: $form-placeholder-weight;
   /* stylelint-enable declaration-no-important */
 }
+
 
 .nds-form-element__control.nds-form-element__control-animated-label {
 
@@ -62,21 +64,21 @@ input[placeholder]::placeholder {
     font-weight: $form-label-pre-animate-font-weight;
     font-size: $form-label-pre-animate-font-size;
     letter-spacing: 1px;
-    color: $color-input-font-kashmiri-blue;
+    color: #333333;
     padding: 0 .5rem 0 0;
   }
 
   .nds-faux-animate,
-  input:focus,
+  input,
   input.nds-has-value:not(:focus):valid,
   input[cloned='dirty'],
   input.nds-input[cloned='dirty'],
   input.nds-is-dirty.nds-not-empty,
-  select:focus,
+  select,
   select.nds-has-value:not(:focus):valid,
   select[cloned='dirty'],
   select.nds-select[cloned='dirty'],
-  textarea:focus,
+  textarea,
   textarea.nds-has-value:not(:focus):valid,
   textarea.nds-not-empty.nds-is-dirty,
   textarea[cloned="dirty"],
@@ -92,8 +94,8 @@ input[placeholder]::placeholder {
       transform: translate3d(0, -1.2rem, 0);
       transition-duration: 300ms;
       z-index: 1;
-      top: .4rem;
-      #{$left}: 0;
+      top: 0;
+      /*#{$left}: 0;*/
 
       .nds-button_icon {
         top: -0.05rem;
@@ -119,15 +121,15 @@ input[placeholder]::placeholder {
   }
 }
 
-
 .nds-form-element__control.nds-input-has-icon svg.nds-icon {
-  fill: $color-input-icon-blue-hue;
+  /*fill: $color-input-icon-blue-hue;*/
+  fill: $color-text-icon-default;
 }
 
 
 .nds-form-element__control.nds-input-has-icon.nds-input-has-icon_left.nds-form-element__control-animated-label .nds-form-element__label,
 .nds-form-element__control.nds-input-has-icon.nds-input-has-icon_left-right.nds-form-element__control-animated-label .nds-form-element__label {
-  #{$left}: 1.25rem;
+  /*#{$left}: 1.25rem;*/
 }
 
 
@@ -257,7 +259,7 @@ textarea:focus::placeholder {
 }
 
 .nds-form-container .nds-combobox__form-element.nds-form-element__control-animated-label.nds-input-has-icon_right .nds-form-element__label label{
-  max-width: calc(100% - 0.6em);  
+  max-width: calc(100% - 0.6em);
 }
 
 .nds-container_fluid.nds-input-has-icon_right .nds-form-element__label label,

@@ -1,0 +1,127 @@
+
+c-ins-product-summary,
+vloc-ins-product-box {
+
+  article[vlocity_ins-insproductsummary_insproductsummary_nds] {
+    margin-top: 2rem;
+    background-color: #fff !important;
+    border: 2px solid $newport-color-brand-orange !important;
+    border-radius: 15px!important;
+    padding: 0!important;
+    overflow: hidden;
+    transition: all 400ms;
+
+    .vloc-ins-check {
+      width: 100px;
+      height: 100px;
+      border: none;
+      background: url("data:image/svg+xml;base64,PHN2ZyBkYXRhLW5hbWU9Ikdyb3VwIDMzNzAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9Ijk4LjQ5MyIgaGVpZ2h0PSI5OC4zNzkiPjxkZWZzPjxjbGlwUGF0aCBpZD0iYSI+PHBhdGggZGF0YS1uYW1lPSJSZWN0YW5nbGUgMTc2MiIgZmlsbD0iI2ZmZiIgZD0iTTAgMGg5OC40OTN2OTguMzc5SDB6Ii8+PC9jbGlwUGF0aD48L2RlZnM+PGcgZGF0YS1uYW1lPSJHcm91cCAzMzY5IiBjbGlwLXBhdGg9InVybCgjYSkiPjxwYXRoIGRhdGEtbmFtZT0iUGF0aCA1MDAiIGQ9Ik05OC40OTIgNDkuMjNBNDkuMjQ3IDQ5LjI0NyAwIDEgMSA1MC4zODEuMDEyIDQ5LjE4NyA0OS4xODcgMCAwIDEgOTguNDkyIDQ5LjIzTTQyLjMgNzAuMjU4YTcuMDY0IDcuMDY0IDAgMCAwIDQuOTg1LTIuMTEzYzEuMjM1LTEuMjA5IDIuNDQ4LTIuNDQgMy42NzItMy42NjFxMTIuMDU0LTEyLjAzNyAyNC4xLTI0LjA3OGE3LjA0NyA3LjA0NyAwIDEgMC05Ljg3OC0xMC4wMzJRNTQuMiA0MS4yNzkgNDMuMjg3IDUyLjI2Yy0uNzc5Ljc4NC0xLjIxOS45NDItMi4wNy4wNDlhMjgyLjYyOCAyODIuNjI4IDAgMCAwLTguMDU2LTguMDc0IDcuMDMyIDcuMDMyIDAgMSAwLTkuOTIyIDkuOTY1YzQuNjEyIDQuNjc2IDkuMjgxIDkuMjk0IDEzLjkzMiAxMy45M2E3LjExNCA3LjExNCAwIDAgMCA1LjEyOSAyLjEyOCIgZmlsbD0iI2ZmZiIvPjwvZz48L3N2Zz4=");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      bottom: 1rem;
+      top: initial;
+      right: 50%;
+      margin-right: -50px;
+
+      > * {
+        display: none !important;
+      }
+    }
+
+    header {
+      background-color: $newport-color-brand-orange !important;
+      padding: 1rem;
+      color: #fff !important;
+      -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0);
+      -moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0);
+      box-shadow: 0px 3px 6px 0px rgba(0,0,0,0);
+      transition: all 400ms;
+      position: relative;
+
+      .vloc-ins-product-price {
+        font-size: 32px;
+        background-color: transparent;
+        width: auto;
+        height: auto;
+        border-radius: 0;
+        line-height: inherit;
+        margin-bottom: .5rem;
+        transition: all 400ms;
+      }
+
+      .vloc-ins-product-name {
+        font-size: 14px;
+        margin-bottom: .5rem;
+      }
+    }
+
+    > [vlocity_ins-insproductsummary_insproductsummary_nds].nds-p-bottom_medium {
+      padding: 30px;
+      background-color: #fff;
+      transition: all 400ms;
+
+      .vloc-ins-optional-heading[vlocity_ins-insCoverageSummary_insCoverageSummary_nds] {
+        border-color: #939393;
+        border-width: 2px;
+        transition: all 400ms;
+      }
+
+      c-ins-coverage-summary > div {
+        border-color: #939393;
+        color: #333;
+        transition: all 400ms;
+
+        .vloc-ins-attribute-label,
+        .vloc-ins-attribute-value {
+          color: #333;
+          transition: all 400ms;
+        }
+      }
+    }
+
+    &:hover {
+      .vloc-ins-product-price {
+        background-color: transparent !important;
+      }
+    }
+
+    &.vloc-ins-selected {
+      margin-top: 0rem;
+
+      header {
+        padding-top: 3rem;
+        background-color: #fff !important;
+        color: $newport-color-brand-orange !important;
+        -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+        -moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+        box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+
+        .vloc-ins-product-price {
+          background-color: transparent !important;
+          color: $newport-color-brand-orange;
+        }
+      }
+
+      > [vlocity_ins-insproductsummary_insproductsummary_nds].nds-p-bottom_medium {
+        background-color: $newport-color-brand-orange;
+        padding-bottom: 8rem;
+
+        .vloc-ins-optional-heading[vlocity_ins-insCoverageSummary_insCoverageSummary_nds] {
+          border-color: #fff;
+        }
+
+        c-ins-coverage-summary > div {
+          border-color: #fff;
+          color: #fff;
+
+          .vloc-ins-attribute-label,
+          .vloc-ins-attribute-value {
+            color: #fff;
+          }
+        }
+      }
+
+
+    }
+  }
+}

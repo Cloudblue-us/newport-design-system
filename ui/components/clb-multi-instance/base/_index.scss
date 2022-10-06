@@ -1,0 +1,179 @@
+$border-radius: 15px;
+vlocity_ins-ins-os-multi-instance-grandchildren {
+
+  font-family: Poppins;
+
+  c-ins-os-multi-grandchildren-product {
+
+    .vloc-ins-multi-item-child {
+      border: 0 !important;
+    }
+
+    .vloc-ins-multi-item-child-top {
+      border: 2px solid $newport-color-brand-orange;
+      background-color: $newport-color-brand-orange;
+      border-radius: $border-radius $border-radius 0 0;
+      /*-webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+      -moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+      box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);*/
+      padding: .5rem !important;
+      z-index: 1;
+      position: relative;
+      width: 50%;
+
+      .vloc-ins-multi-item-child-top-left {
+        width: 100%;
+        max-width: 100%;
+        line-height: 1;
+        border: none !important;
+        padding: 0 !important;
+
+        .vloc-ins-attribute-component {
+          color: #fff;
+          font-size: 18px;
+          margin: 0;
+          padding: 0;
+
+          label {
+            color: #fff;
+            font-size: 18px;
+            font-weight: normal;
+            margin: 0;
+            padding: 0;
+          }
+        }
+
+        .vloc-ins-multi-item-child-price-container {
+          display: none;
+        }
+      }
+      .vloc-ins-multi-item-child-top-right {
+        display: none;
+      }
+    }
+
+    .vloc-ins-multi-item-child-bottom {
+      margin: 0 !important;
+      padding: 0 !important;
+      background-color: #fff;
+
+      lightning-button {
+        display: none !important;
+      }
+      lightning-button + div {
+        height: initial !important;
+        display: block !important;
+      }
+      c-ins-os-coverage-list {
+        display: flex;
+        background-color: #ffffff;
+        align-items: flex-end;
+        > div {
+          border-radius: $border-radius;
+          border: 2px solid $newport-color-brand-orange;
+          padding: 0 !important;
+
+          &:first-child {
+            margin-right: .25rem;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+          }
+          &:last-child {
+            margin-left: .25rem;
+          }
+
+          c-ins-os-coverage {
+
+            .vloc-ins-coverage-card[vlocity_ins-insOsCoverage_insOsCoverage] {
+              margin: 0 1rem;
+              padding: 0.5rem 0;
+              border-bottom: 1px solid #939393;
+              background-color: transparent !important;
+
+              > * {
+                padding: 0;
+              }
+
+              .vloc-ins-coverage-header {
+
+                > div:first-child {
+                  margin-right: .5rem !important;
+                }
+
+                .vloc-ins-icon-container {
+
+                  svg {
+                    fill: #01827D !important;
+                    width: 27px;
+                    height: 27px;
+                  }
+                }
+
+                .slds-checkbox_faux.nds-checkbox_faux {
+                  background-color: $newport-color-brand-orange;
+                  width: 15px;
+                  height: 15px;
+                  margin-left: 6px;
+                  margin-right: 6px;
+                }
+                .vloc-ins-coverage-details {
+                  .vloc-ins-coverage-description-container {
+                    h3 {
+                      font-size: 16px;
+                      line-height: 1;
+                      font-weight: normal;
+                      color: #333;
+
+                    }
+                  }
+
+                  .vloc-ins-coverage-total {
+                    display: none;
+                  }
+                }
+
+              }
+
+              .vloc-ins-product-attribute-category  {
+                opacity: 1;
+                max-height: initial;
+                margin: 0;
+
+                .vloc-ins-attribute-container {
+                  margin: 0;
+
+                  c-ins-attribute {
+                    .vloc-ins-label {
+                      font-size: 14px;
+                      color: #333;
+                    }
+                  }
+
+                  .vloc-ins-attribute-component {
+                    .nds-form-container {
+                      margin: 0;
+                      padding: 0;
+                    }
+                  }
+                }
+              }
+
+              .vloc-ins-coverage-collapse-toggle {
+                display: none;
+              }
+
+            }
+
+            &:last-child {
+              .vloc-ins-coverage-card[vlocity_ins-insOsCoverage_insOsCoverage] {
+                border-bottom: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+}
