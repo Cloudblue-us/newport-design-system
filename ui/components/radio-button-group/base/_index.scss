@@ -193,8 +193,14 @@
   }
 }
 
+c-radio-group div.nds-form-element { position: relative }
+
+c-radio-group .nds-clearfix { margin: 0 }
+
 .nds-form-element__legend {
   margin-bottom: 0.25rem;
+  position: absolute;
+  top: -14px;
 
   > span {
     font-size: 0.875rem;
