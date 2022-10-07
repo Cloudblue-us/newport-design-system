@@ -29,6 +29,7 @@ p[vlc-bind-html],
   color: $color-light-blue-hue;
   word-break: normal;
   font-family: $font-family; // workaround for LWC overriding styles
+  padding-bottom: 0;
 
   p,
   span {
