@@ -143,6 +143,7 @@
   @if $wrap {
     flex-wrap: wrap;
     align-items: flex-start;
+    justify-content: space-between;
   }
 
   @else {
