@@ -394,3 +394,7 @@
     box-shadow: 0 0 0 2px #fff inset, 0 0 0 3px $color-border inset;
   }
 }
+
+lightning-base-combobox-item span.slds-truncate{
+  white-space: break-spaces;
+}

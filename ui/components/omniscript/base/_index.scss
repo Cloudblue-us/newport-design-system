@@ -70,3 +70,22 @@
     z-index: unset;
   }
 }
+// * STYLES BUTTON NEXT AND BACK
+@media (min-width: 768px) {
+  .nds-m-around_small {
+    display: flex;
+    position: relative;
+    bottom: 0;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    width: 50%;
+    left: 40%;
+  }
+  .nds-grid.nds-grid_align-center{
+    display: block;
+    flex: 1 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+
+  }
+}
