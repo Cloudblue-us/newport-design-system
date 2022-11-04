@@ -1,7 +1,7 @@
 // Copyright (c) 2015-present, salesforce.com, inc. All rights reserved
 // Licensed under BSD 3-Clause - see LICENSE.txt or git.io/sfdc-license
 
-.nds-theme {
+  .slds-theme, .nds-theme  {
   /**
    * @summary Sets the background color to white
    *
@@ -80,12 +80,12 @@
    */
   &_warning,
   &--warning {
-    background-color: $color-background-warning;
-    color: $color-text-default;
+    background-color: $color-background-warning !important;
+    color: $color-text-default !important;
 
-    .nds-icon,
+    .slds-icon, .nds-icon,
     .nds-button__icon {
-      fill: $color-text-icon-default;
+      fill: $color-text-icon-default !important;
     }
 
     a:not(.nds-button--neutral),

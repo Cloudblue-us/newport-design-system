@@ -57,7 +57,8 @@ $color-text-icon-default-hint-borderless: $palette-gray-4 !default;
 $color-text-icon-default-hint: $palette-gray-7 !default;
 $color-text-icon-default-hover: $science-blue !default;
 /*$color-text-icon-default: $palette-gray-9 !default;*/
-$color-text-icon-default: #939393 !default;
+// $color-text-icon-default: #939393 !default;
+$color-text-icon-default: rgb(255 255 255) !default;
 $color-text-icon-inverse-active: $white !default;
 $color-text-icon-inverse-disabled: $white-transparent-15 !default;
 $color-text-icon-inverse-hint-hover: $white-transparent-75 !default;
