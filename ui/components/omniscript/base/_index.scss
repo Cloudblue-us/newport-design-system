@@ -89,3 +89,9 @@
 
   }
 }
+
+@media (max-width: 768px) {
+  .nds-tooltip__container span .tooltipSection {
+    width: 200px;
+  }
+}

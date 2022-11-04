@@ -24,7 +24,8 @@
 
   .nds-popover__body {
     font-size: $font-size-small;
-    font-weight: $font-weight-light;
+    // font-weight: $font-weight-light;
+    font-weight: 500;
     /*color: $color-text-inverse;*/
     color: #333333;
   }
@@ -158,3 +159,8 @@
     }
   }
 }
+
+// .nds-tooltip__container svg {
+//   fill: #0f827d;
+// }
+

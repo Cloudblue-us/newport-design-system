@@ -1,6 +1,7 @@
 
 .clb-tooltip {
   position: relative;
+  z-index: 1;
 }
 
 .clb-tooltip__icon {
@@ -10,7 +11,7 @@
   font-size: 12px;
   border-radius: 50%;
   justify-content: center;
-  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNCIgaGVpZ2h0PSIxNCIgdmlld0JveD0iMCAwIDUyIDUyIj48cGF0aCBmaWxsPSIjMzMzIiBkPSJtMjYgMmMtMTMuMyAwLTI0IDEwLjctMjQgMjRzMTAuNyAyNCAyNCAyNCAyNC0xMC43IDI0LTI0LTEwLjctMjQtMjQtMjR6IG0wIDEyLjFjMS43IDAgMyAxLjMgMyAzcy0xLjMgMy0zIDMtMy0xLjMtMy0zIDEuMy0zIDMtM3ogbTUgMjFjMCAwLjUtMC40IDAuOS0xIDAuOWgtOGMtMC41IDAtMS0wLjMtMS0wLjl2LTJjMC0wLjUgMC40LTEuMSAxLTEuMSAwLjUgMCAxLTAuMyAxLTAuOXYtNGMwLTAuNS0wLjQtMS4xLTEtMS4xLTAuNSAwLTEtMC4zLTEtMC45di0yYzAtMC41IDAuNC0xLjEgMS0xLjFoNmMwLjUgMCAxIDAuNSAxIDEuMXY4YzAgMC41IDAuNCAwLjkgMSAwLjkgMC41IDAgMSAwLjUgMSAxLjF2MnoiPjwvcGF0aD48L3N2Zz4K);
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNCIgaGVpZ2h0PSIxNCIgdmlld0JveD0iMCAwIDUyIDUyIj48cGF0aCBmaWxsPSIjMGY4MjdkIiBkPSJtMjYgMmMtMTMuMyAwLTI0IDEwLjctMjQgMjRzMTAuNyAyNCAyNCAyNCAyNC0xMC43IDI0LTI0LTEwLjctMjQtMjQtMjR6IG0wIDEyLjFjMS43IDAgMyAxLjMgMyAzcy0xLjMgMy0zIDMtMy0xLjMtMy0zIDEuMy0zIDMtM3ogbTUgMjFjMCAwLjUtMC40IDAuOS0xIDAuOWgtOGMtMC41IDAtMS0wLjMtMS0wLjl2LTJjMC0wLjUgMC40LTEuMSAxLTEuMSAwLjUgMCAxLTAuMyAxLTAuOXYtNGMwLTAuNS0wLjQtMS4xLTEtMS4xLTAuNSAwLTEtMC4zLTEtMC45di0yYzAtMC41IDAuNC0xLjEgMS0xLjFoNmMwLjUgMCAxIDAuNSAxIDEuMXY4YzAgMC41IDAuNCAwLjkgMSAwLjkgMC41IDAgMSAwLjUgMSAxLjF2MnoiPjwvcGF0aD48L3N2Zz4K);
   fill: transparent;
   stroke: transparent;
   background-repeat: no-repeat;
@@ -23,21 +24,31 @@
 .clb-tooltip:hover > .clb-tooltip__text {
   display: block;
 }
-.clb-tooltip > .clb-tooltip__text{
+.clb-tooltip > .clb-tooltip__text {
   font-family: var(--lwc-fontFamily,Salesforce Sans);
   font-size: .75rem;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1.5;
-  color: #706e6b;
+  color: #333;
   padding: .5rem 1rem;
-  background:   rgb(139, 198, 196);;
+  background:   rgb(139, 198, 196);
   display: none;
   border-radius: 4px;
   position: absolute;
   bottom: 2rem;
   left: -0.3rem;
-  width: 13rem;
+  width: 350px;
+  height: auto;
 }
+
+.clb-tooltip > .clb-tooltip__text p {
+  font-family: var(--lwc-fontFamily,Salesforce Sans);
+  font-size: .75rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #333;
+}
+
 .clb-tooltip > .clb-tooltip__text:after {
   position: absolute;
   content: '';
@@ -48,6 +59,17 @@
   border-color: rgb(139, 198, 196) transparent transparent transparent;
   left: .5rem;
   bottom: -8px;
+}
+
+@media (max-width: 340px) {
+  .clb-tooltip > .clb-tooltip__text {
+    width: 180px;
+  }
+}
+@media (min-width: 340px) and (max-width: 480px) {
+  .clb-tooltip > .clb-tooltip__text {
+    width: 200px;
+  }
 }
 
 

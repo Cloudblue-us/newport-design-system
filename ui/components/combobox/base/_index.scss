@@ -292,6 +292,8 @@
  * @selector .nds-listbox__option-text_entity
  * @restrict .nds-listbox__option span
  */
+.slds-listbox__option-text_entity,
+.slds-listbox__option-text--entity,
 .nds-listbox__option-text_entity,
 .nds-listbox__option-text--entity {
   @include truncate; // truncate mixin used so class wouldn't need to be repeated in DOM

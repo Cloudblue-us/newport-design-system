@@ -66,12 +66,14 @@
     color: $color-midnight-blue;
   }
 
+
   // LWC block indentation
   .nds-block_container>label~.nds-block_body {
-    padding-top: 1.5rem;
-    padding-#{$left}: 1.5625rem;
+    // padding-top: 1.5rem;
+    // padding-#{$left}: 1.5625rem;
     /*color: $color-midnight-blue;*/
-    color: #01827D;
+    // color: #01827D;
+    color: #333;
   }
 
   div[vlc-slds-toggle-elem='visible'],
@@ -110,8 +112,9 @@
   }
 
   .nds-block_container>label~.nds-block_body {
-    padding-top: 1.5rem;
-    padding-#{$left}: 2rem;
+    // padding-top: 1.5rem;
+    // padding-#{$left}: 2rem;
+    padding: 0;
     max-height: 1000rem;
     opacity: 1;
     transition: opacity 1s, max-height 1s ease-in;
