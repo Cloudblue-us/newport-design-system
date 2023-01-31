@@ -24,7 +24,8 @@
     width: max-content;
   }
 
-  .nds-form-element, .nds-combobox__form-element {
+  .nds-form-element,
+  .nds-combobox__form-element {
     .nds-dropdown.nds-dropdown_fluid {
       width: 100%;
     }
@@ -39,12 +40,12 @@
     top: auto;
   }
 
-  @include deprecate('4.0.0', 'Use .nds-dropdown-trigger--hover instead') {
-
+  @include deprecate("4.0.0", "Use .nds-dropdown-trigger--hover instead") {
     .nds-dropdown {
       visibility: hidden;
       opacity: 0;
-      transition: opacity $duration-quickly linear, visibility $duration-quickly linear;
+      transition: opacity $duration-quickly linear,
+        visibility $duration-quickly linear;
     }
 
     &:hover,
@@ -54,7 +55,8 @@
       .nds-dropdown {
         visibility: visible;
         opacity: 1;
-        transition: opacity $duration-quickly linear, visibility $duration-quickly linear;
+        transition: opacity $duration-quickly linear,
+          visibility $duration-quickly linear;
       }
     }
   }
@@ -66,11 +68,11 @@
    */
   &_hover,
   &--hover {
-
     .nds-dropdown {
       visibility: hidden;
       opacity: 0;
-      transition: opacity $duration-quickly linear, visibility $duration-quickly linear;
+      transition: opacity $duration-quickly linear,
+        visibility $duration-quickly linear;
     }
 
     &:hover,
@@ -80,7 +82,8 @@
       .nds-dropdown {
         visibility: visible;
         opacity: 1;
-        transition: opacity $duration-quickly linear, visibility $duration-quickly linear;
+        transition: opacity $duration-quickly linear,
+          visibility $duration-quickly linear;
       }
     }
   }
@@ -92,7 +95,6 @@
    */
   &_click,
   &--click {
-
     .nds-dropdown {
       display: none;
     }
@@ -114,7 +116,6 @@
   // Deal with positioning when target is just an icon
   > [class*="nds-button_icon"],
   > [class*="nds-button--icon"] {
-
     ~ .nds-dropdown_left[class*="nds-nubbin"],
     ~ .nds-dropdown--left[class*="nds-nubbin"] {
       #{$left}: ($spacing-x-small * -1);
@@ -309,7 +310,10 @@
    */
   &_length-with-icon-5,
   &--length-with-icon-5 {
-    @include dropdown-overflow-length(5, $icon-size: $square-icon-small-boundary);
+    @include dropdown-overflow-length(
+      5,
+      $icon-size: $square-icon-small-boundary
+    );
   }
 
   /**
@@ -321,7 +325,10 @@
    */
   &_length-with-icon-7,
   &--length-with-icon-7 {
-    @include dropdown-overflow-length(7, $icon-size: $square-icon-small-boundary);
+    @include dropdown-overflow-length(
+      7,
+      $icon-size: $square-icon-small-boundary
+    );
   }
 
   /**
@@ -333,7 +340,10 @@
    */
   &_length-with-icon-10,
   &--length-with-icon-10 {
-    @include dropdown-overflow-length(10, $icon-size: $square-icon-small-boundary);
+    @include dropdown-overflow-length(
+      10,
+      $icon-size: $square-icon-small-boundary
+    );
   }
 
   /**
@@ -391,11 +401,10 @@
     margin-bottom: ($square-tooltip-nubbin * 0.5);
   }
 
-  @include deprecate('4.0.0') {
-
+  @include deprecate("4.0.0") {
     &_nubbin-top,
     &--nubbin-top {
-      @include nubbin(top, 'before');
+      @include nubbin(top, "before");
       @include nubbin(top);
       margin-top: ($square-tooltip-nubbin * 0.5);
 
@@ -506,8 +515,7 @@
     }
   }
 
-  @include deprecate('4.0.0') {
-
+  @include deprecate("4.0.0") {
     .nds-has-icon {
       position: relative;
 
@@ -554,4 +562,9 @@
       }
     }
   } // Deprecate has-icon
+}
+
+// Show Edit block dropdown
+div[vlocity_ins-omniscripteditblock_omniscripteditblock_nds].nds-dropdown {
+  display: block !important;
 }

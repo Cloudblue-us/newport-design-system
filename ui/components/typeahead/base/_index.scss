@@ -99,3 +99,9 @@ svg.nds-icon.slds-button__icon.nds-button__icon.nds-icon-text-default.nds-icon_x
     }
   }
 }
+
+div[vlocity_ins-typeahead_typeahead_nds] .nds-dropdown {
+  display: block!important;
+  opacity: 1!important;
+  visibility: initial;
+}

@@ -208,6 +208,9 @@ input[placeholder]::placeholder {
 .nds-form-container {
   margin-bottom: .5rem;
   padding: .75rem;
+  @media (max-width: 480px) {
+    padding: .75rem 0;
+  }
 }
 
 .nds-form-container .nds-form-element__control-animated-label {

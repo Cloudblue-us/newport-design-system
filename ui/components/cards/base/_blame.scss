@@ -102,3 +102,10 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+  .nds-card__body .omniscript-step__body-nds[vlocity_ins-omniscriptStep_omniscriptStep_nds],
+    .omniscript-step__body-nds[vlocity_ins-omniscriptStep_omniscriptStep_nds] {
+    padding: 0;
+  }
+}

@@ -1,37 +1,49 @@
 .clbH2,
 .clb-h2 {
+  font-family: "Poppins", sans-serif;
   font-size: 24px;
-  color: #01827D;
-  font-weight: bolder;
+  color: #01827d;
+  font-weight: 600 !important;
+  margin-bottom: -0.5rem !important;
 }
 .clbH3,
 .clb-h3 {
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
   color: #333333;
-  font-weight: bold;
+  font-weight: 600 !important;
+  margin-bottom: -0.3rem !important;
 }
 .clbH4,
 .clb-h4 {
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
-  color: #01827D;
+  color: #01827d;
   font-weight: normal;
+  margin-bottom: -0.5rem !important;
 }
 .clbH5,
 .clb-h5 {
-
+  font-family: "Poppins", sans-serif;
 }
 .clbH6,
 .clb-h6 {
-
+  font-family: "Poppins", sans-serif;
 }
 .clbP,
 .clb-p {
+  font-family: "Poppins", sans-serif;
   color: #333333 !important;
   font-weight: normal;
+  margin-bottom: -0.5rem !important;
 }
 .clbHr,
 clb-hr {
   color: #bebebe;
+  margin: 0;
+  padding: 0;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 .clb-measure {
   padding-top: 1.9rem;

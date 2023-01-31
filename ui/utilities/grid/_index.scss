@@ -80,7 +80,7 @@
 
 /**
  * @summary Applies nowrap to white-space property.
- * 
+ *
  * @selector .nds-nowrap-whitespace
  * @modifer
  */
@@ -217,6 +217,13 @@
   margin: {
     #{$right}: ($spacing-medium * -1);
     #{$left}: ($spacing-medium * -1);
+  }
+}
+
+@media (max-width: 480px) {
+  .nds-p-horizontal_medium {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 }
 

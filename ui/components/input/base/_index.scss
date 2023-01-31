@@ -14,7 +14,7 @@
   @include form-states;
   box-shadow: none;
   display: inline-block;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
   line-height: $height-input;
   min-height: calc(#{$height-input} + (#{$border-width-thin} * 2)); // For IE
   /**
@@ -88,7 +88,7 @@
   /* stylelint-enable selector-no-vendor-prefix */
 }
 
-.nds-read-only  {
+.nds-read-only {
   .nds-input {
     @include form-input-disabled;
   }
@@ -130,10 +130,13 @@
     top: 50%;
     margin-top: (($square-icon-medium-content * 0.5) * -1);
     line-height: 1;
-    margin-left: .5rem;
+    margin-left: 0.5rem;
 
     /* @Todo - we need to be sure this is deprecated since the color sems to be the correct gray I see in specs */
-    @include deprecate('4.0.0', 'Use .nds-icon-text-default on the SVG icon instead') {
+    @include deprecate(
+      "4.0.0",
+      "Use .nds-icon-text-default on the SVG icon instead"
+    ) {
       fill: $color-text-input-icon;
     }
   }
@@ -146,11 +149,10 @@
    */
   &_left,
   &--left {
-
     .nds-input,
     .nds-input_bare,
     .nds-input--bare {
-      padding-#{$left}: $spacing-large + .5rem;
+      padding-#{$left}: $spacing-large + 0.5rem;
     }
   }
 
@@ -162,9 +164,8 @@
    */
   &_right,
   &--right {
-
     .nds-input__icon {
-      #{$right}: .5rem;
+      #{$right}: 0.5rem;
     }
 
     .nds-input,
@@ -190,7 +191,7 @@
      */
     .nds-input__icon_left,
     .nds-input__icon--left {
-      #{$left}: .5rem!important;
+      #{$left}: 0.5rem !important;
     }
 
     /**
@@ -201,7 +202,7 @@
      */
     .nds-input__icon_right,
     .nds-input__icon--right {
-      #{$right}: .5rem;
+      #{$right}: 0.5rem;
     }
 
     .nds-input,
@@ -297,12 +298,14 @@
    * @restrict .nds-form-element__static
    */
   &--edit {
-    width: calc(100% - #{$square-icon-small-boundary}); // Leave space for edit icon
+    width: calc(
+      100% - #{$square-icon-small-boundary}
+    ); // Leave space for edit icon
   }
 }
 
 .nds-has-error {
-  @include form-input-error('.nds-input');
+  @include form-input-error(".nds-input");
 
   .nds-input__icon {
     fill: $color-text-error;
@@ -310,16 +313,12 @@
   }
 }
 
-
 .nds-input-has-icon span.nds-form-element__addon {
   margin-#{$left}: 0;
 }
 
-
 @media all and (max-width: 480px) {
-
   .nds-form--multi-input__container {
-
     .nds-form-element__control-animated-label.nds-size_2-of-3 {
       width: 50%;
       max-width: 50%;
@@ -346,80 +345,98 @@ input[type="tel"].nds-input_mask.nds-input.nds-not-empty {
 }
 
 .nds-form-container.nds-relative-tooltip {
-	display: flex;
-	.nds-tooltip_container {
-		order: 2;
-	}
+  display: flex;
+  .nds-tooltip_container {
+    order: 2;
+  }
 }
 .nds-form-element__control {
-	.nds-pill {
-		display: block;
-	}
+  .nds-pill {
+    display: block;
+  }
 }
 .nds-file-selector-container {
-	height: 35px;
-	border-radius: 3px;
-	border: 1px solid #d8dde6;
+  height: 35px;
+  border-radius: 3px;
+  border: 1px solid #d8dde6;
 }
 .nds-file-selector__files {
-	li {
-		border-bottom: none;
-		border-radius: 0;
-		margin: 0;
-		.nds-file-selector__remove-file-icon {
-			float: right;
-		}
-		&:first-of-type {
-			border-top-left-radius: 3px;
-			border-top-right-radius: 3px;
-		}
-		&:last-of-type {
-			border-bottom: 1px solid rgb(221, 219, 218);
-			border-bottom-left-radius: 3px;
-			border-bottom-right-radius: 3px;
-		}
-	}
+  li {
+    border-bottom: none;
+    border-radius: 0;
+    margin: 0;
+    .nds-file-selector__remove-file-icon {
+      float: right;
+    }
+    &:first-of-type {
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+    }
+    &:last-of-type {
+      border-bottom: 1px solid rgb(221, 219, 218);
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
+  }
 }
 .nds-file-selector_input {
-	opacity: 0;
-	position: absolute;
+  opacity: 0;
+  position: absolute;
 }
 .nds-file-selector_label {
-	position: absolute;
-	pointer-events: none;
-	top: 0.5rem;
-	left: .75rem;
-	font-weight: 700;
-	color: inherit;
-	font-size: 14px;
+  position: absolute;
+  pointer-events: none;
+  top: 0.5rem;
+  left: 0.75rem;
+  font-weight: 700;
+  color: inherit;
+  font-size: 14px;
 }
 .nds-file-selector_icon {
-	pointer-events: none;
-	position: absolute;
-	right: 11px;
-	top: 0.5rem;
+  pointer-events: none;
+  position: absolute;
+  right: 11px;
+  top: 0.5rem;
 }
 .nds-file-selector__body {
-	cursor: pointer;
+  cursor: pointer;
 }
 .nds-file-selector__remove-file-icon {
-	cursor: pointer;
+  cursor: pointer;
 }
 .nds-input__clickable-icon-right {
-	right: .75em;
-	position: absolute;
-	top: 25%;
-	cursor: pointer;
+  right: 0.75em;
+  position: absolute;
+  top: 25%;
+  cursor: pointer;
 }
 .nds-input__input-clickable-icon-right {
-	padding-right: 2em;
+  padding-right: 2em;
 }
 .nds-input__clickable-icon-left {
-	left: .75em;
-	position: absolute;
-	top: 25%;
-	cursor: pointer;
+  left: 0.75em;
+  position: absolute;
+  top: 25%;
+  cursor: pointer;
 }
 .nds-input__input-clickable-icon-left {
-	padding-left: 2em;
+  padding-left: 2em;
+}
+
+.nds-required {
+  position: absolute;
+  left: 0;
+  margin-right: 0.6rem;
+}
+
+.nds-form-element__label label:has(> .nds-required) {
+  padding: 0 0 0 0.6rem !important;
+}
+
+legend.nds-form-element__legend:has(> .nds-required) {
+  padding-left: 0.5rem;
+}
+
+legend.nds-form-element__legend .nds-required {
+  margin: -1px 0.125rem 0 0;
 }

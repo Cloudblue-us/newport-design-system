@@ -9,31 +9,30 @@
 
 // Lightning Design System
 
-@import 'init';
+@import "init";
 @import url(./nds-fonts.css);
 
 // Resets (unscoped)
-@include root('.via-nds', '.via-nds');
+@include root(".via-nds", ".via-nds");
 
 #{$reset-wrapping-class} {
   // Resets
-  @import 'vendor/normalize';
+  @import "vendor/normalize";
   @include core($scoped: false, $globals: true);
 
   // Framework
-  @import 'touch/index';
-  @import 'components/index';
-  @import 'components/omniscript/base/index';
-  @import 'utilities/index';
-  @import 'atoms/index';
-  @import 'molecules/index';
-  @import 'organisms/index';
-  @import 'templates/index';
+  @import "touch/index";
+  @import "components/index";
+  @import "components/omniscript/base/index";
+  @import "utilities/index";
+  @import "atoms/index";
+  @import "molecules/index";
+  @import "organisms/index";
+  @import "templates/index";
 
   // Print
-  @import 'vendor/html5boilerplate-print';
+  @import "vendor/html5boilerplate-print";
 }
-
 
 // Resets
 // @import 'vendor/normalize';
@@ -51,4 +50,3 @@
 
 // // Print
 // @import 'vendor/html5boilerplate-print';
-
